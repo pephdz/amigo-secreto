@@ -79,18 +79,18 @@ function sortearAmigo() {
         </li>🎉🎉
     `;
 
-    // Resaltar nombre en la lista
+    // Resaltar nombre en lista
     const itemsLista = listaAmigosElement.querySelectorAll('.name-item');
     itemsLista.forEach((item, index) => {
         item.classList.toggle('selected', index === indiceAleatorio);
     });
 
-    // Cambiar visibilidad de los botones
+    // Cambiar visibilidad  botones
     document.getElementById('main-buttons').style.display = 'none';
     document.getElementById('post-draw-buttons').style.display = 'block';
 }
 
-// Función para reiniciar el juego 
+// Función reiniciar  juego 
 function reiniciarJuego() {
     listaAmigos = [];
     document.getElementById('listaAmigos').innerHTML = '';
@@ -103,7 +103,7 @@ function reiniciarJuego() {
     document.getElementById('amigo').focus();
 }
 
-// Función para salir del juego 
+// Función salir  juego 
 function salirJuego() {
     document.getElementById('resultado').innerHTML = `
         <li class="result-item">
@@ -119,7 +119,7 @@ function salirJuego() {
     document.getElementById('main-buttons').style.display = 'none';
     document.getElementById('post-draw-buttons').style.display = 'none';
     
-    // Mostrar botón para volver a jugar
+    // Mostrar botón volver a jugar
     const playAgainButton = document.createElement('button');
     playAgainButton.className = 'button-restart';
     playAgainButton.innerHTML = `
