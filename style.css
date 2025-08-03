@@ -160,3 +160,38 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+.button-restart {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-exit {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-restart img, 
+.button-exit img,
+.button-draw img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.button-container {
+    margin-top: 20px;
+}

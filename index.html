@@ -27,14 +27,31 @@
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
-                    Sortear amigo
-                </button>
-            </div>
-        </section>
-    </main>
+           
+
+        <!-- Contenedor de botones principal (visible al inicio) -->
+        <div id="main-buttons" class="button-container">
+            <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
+                Sortear amigo
+            </button>
+        </div>
+
+        <!-- Contenedor de botones después del sorteo (oculto inicialmente) -->
+        <div id="post-draw-buttons" class="button-container" style="display: none;">
+            <button class="button-restart" onclick="reiniciarJuego()">
+                <img src="assets/refresh.png" alt="Reiniciar juego">
+                Jugar otra vez
+            </button>
+            <button class="button-exit" onclick="salirJuego()">
+                <img src="assets/exit.png" alt="Salir del juego">
+                Salir
+            </button>
+        </div>
+
+    </section>
+</main>
+    
 
     <script src="app.js" defer></script>
 </body>
